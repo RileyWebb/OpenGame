@@ -2,12 +2,12 @@
 
 namespace OpenChess
 {
-    public class Game
+    public class ChessGame : Game
     {
-        public Player White { get; private set; }
-        public Player Black { get; private set; }
+        public Player? White { get; private set; }
+        public Player? Black { get; private set; }
 
-        public Game(Player white, Player black)
+        public ChessGame(Player white = null, Player black = null)
         {
             White = white;
             Black = black;
@@ -16,10 +16,12 @@ namespace OpenChess
 
     public enum GameState
     {
-        Ongoing
+
+        Ongoing,
+        Complete,
     }
     
-    public enum Result
+    public enum GameResult
     {
         Checkmate, // Win By Checkmate
         Resignation, // Win By Resignation
@@ -33,7 +35,7 @@ namespace OpenChess
         DrawOnTime, // Draw By Time
     }
     
-    public enum Termination
+    public enum GameTermination
     {
         Abandoned,
         Adjudication,

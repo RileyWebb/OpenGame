@@ -9,6 +9,6 @@ namespace OpenChess.PositionDescriptors
             
         }
 
-        public abstract Game Create(Player white, Player black);
+        public abstract ChessGame Create(Player white, Player black);
     }
 }

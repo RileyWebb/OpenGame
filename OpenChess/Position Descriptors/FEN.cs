@@ -9,9 +9,9 @@ namespace OpenChess.PositionDescriptors
             
         }
         
-        public override Game Create(Player white, Player black)
+        public override ChessGame Create(Player white, Player black)
         {
-            return new Game(white, black);
+            return new ChessGame(white, black);
         }
     }
 }

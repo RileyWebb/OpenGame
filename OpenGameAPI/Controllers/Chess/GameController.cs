@@ -9,15 +9,21 @@ using OpenGame;
 
 namespace OpenGameAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/chess/game")]
     [ApiController]
     public class GameController : ControllerBase
     {
         
-        [HttpGet("")]
-        public Game Get()
+        [HttpGet("{id}")]
+        public async Task<Game> GetGame(string id)
         {
-            return new Game();
+            if (!Guid.TryParse(id, out Guid guid))
+                return null;
+
+            if (!GameManager.Games.TryGetValue(guid, out Game? g))
+                return null;
+            
+            return g;
         }
     }
 }
