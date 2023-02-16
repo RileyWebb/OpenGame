@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGame", "OpenGame\OpenGa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenChess", "OpenChess\OpenChess.csproj", "{1E0C8750-B8F0-416F-A2F0-7D94ED014B57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGameServer", "OpenGameServer\OpenGameServer.csproj", "{AA68D1AA-10E4-4391-9817-3F280C04BAB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{1E0C8750-B8F0-416F-A2F0-7D94ED014B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E0C8750-B8F0-416F-A2F0-7D94ED014B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E0C8750-B8F0-416F-A2F0-7D94ED014B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA68D1AA-10E4-4391-9817-3F280C04BAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA68D1AA-10E4-4391-9817-3F280C04BAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA68D1AA-10E4-4391-9817-3F280C04BAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA68D1AA-10E4-4391-9817-3F280C04BAB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

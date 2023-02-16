@@ -1,0 +1,1 @@
+﻿kubernetties cluster can register new servers to the api.
